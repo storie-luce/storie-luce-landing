@@ -2,9 +2,7 @@
    VALORI — ZEN
    =========================== */
 
-#valori {
-  background: #f0ece4;
-}
+#valori { background: #f0ebe3; }
 
 #valori .section-inner {
   padding-top: 6rem;
@@ -14,7 +12,7 @@
 #valori h2 { margin-bottom: 1.2rem; }
 
 #valori p {
-  color: #333;
+  color: #5c4a3a;
   font-size: 1.05rem;
   line-height: 1.85;
 }
