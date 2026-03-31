@@ -60,10 +60,10 @@ section {
   border-bottom: 1px solid #e8e4de;
 }
 
-/* alternanza sfondi per ID — zen-compliant */
-#home    { background: #fafaf8; }
-#libri   { background: #f0ebe3; }
-#valori  { background: #fafaf8; }
+/* sfondi sezioni: bianco solo hero, panna per le altre */
+#home     { background: #fafaf8; }
+#libri    { background: #f0ebe3; }
+#valori   { background: #f0ebe3; }
 #contatti { background: #f0ebe3; }
 
 @media (max-width: 600px) {
