@@ -1,0 +1,25 @@
+/* ===========================
+   CONTATTI — ZEN
+   =========================== */
+
+#contatti .section-inner {
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+#contatti h2 { margin-bottom: 1rem; }
+
+#contatti p {
+  color: #555;
+  margin-bottom: 1.4rem;
+}
+
+#contatti a {
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#contatti a:hover { opacity: 0.5; }
