@@ -1,0 +1,70 @@
+/* ===========================
+   NAV — ZEN
+   =========================== */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #fafaf8;
+  border-bottom: 1px solid #e8e4de;
+  z-index: 1000;
+}
+
+.nav-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.nav-brand img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.nav-title {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  color: #1a1a1a;
+  letter-spacing: 0.01em;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-family: Georgia, serif;
+  font-size: 0.85rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  opacity: 0.45;
+}
+
+@media (max-width: 600px) {
+  .nav-title { display: none; }
+  .nav-links { gap: 1.2rem; }
+}
