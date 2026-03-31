@@ -2,33 +2,84 @@
    LIBRI — ZEN
    =========================== */
 
+#libri { background: #f0ebe3; }
+
 #libri .section-inner {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
-#libri h2 { margin-bottom: 1.2rem; }
+#libri h2 { margin-bottom: 2.4rem; }
 
-#libri p {
-  color: #5c4a3a;
-  margin-bottom: 2.2rem;
+.libri-griglia {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
-#libri a {
+.libro-card {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.libro-copertina {
+  width: 110px;
+  min-width: 110px;
+  height: 110px;
+  border-radius: 4px;
+  background: #3d6b8e;
+}
+
+.libro-copertina--nido {
+  background: #3d6b8e;
+  position: relative;
+}
+
+.libro-testo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.libro-titolo {
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  color: #1a1a1a;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.libro-desc {
+  font-size: 0.92rem;
+  color: #5c4a3a;
+  margin: 0 0 0.8rem 0;
+  line-height: 1.7;
+  max-width: 48ch;
+}
+
+.libro-acquista {
   display: inline-block;
   font-family: Georgia, serif;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   color: #1a1a1a;
   text-decoration: none;
   border: 1px solid #1a1a1a;
-  padding: 0.7rem 1.6rem;
-  letter-spacing: 0.06em;
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   transition: background 0.15s, color 0.15s;
+  align-self: flex-start;
 }
 
-#libri a:hover {
+.libro-acquista:hover {
   background: #1a1a1a;
   color: #fafaf8;
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .libro-card { flex-direction: column; }
+  .libro-copertina { width: 80px; min-width: 80px; height: 80px; }
 }
